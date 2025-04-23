@@ -48,10 +48,10 @@ const WonByBidGuide = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 p-4">
               <button
-                onClick={handleDownloadAppClick}
+                // onClick={handleDownloadAppClick}
                 className="group flex items-center justify-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105"
               >
-                Download App
+                Coming soon on Google Play and the App Store!
               </button>
             </div>
 

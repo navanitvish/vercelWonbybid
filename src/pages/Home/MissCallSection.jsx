@@ -44,7 +44,8 @@ const WonByBidLanding = () => {
             data-aos-delay="200"
             className="text-lg sm:text-xl text-center md:text-2xl text-white font-bold p-6 rounded-xl bg-opacity-20  backdrop-blur-sm  leading-relaxed hover:scale-105 transition-transform duration-300"
           >
-            World's First Skill-Based App and Delivering 20x Faster Results
+           The world’s first skill-based app, delivering results 20x faster!
+
           </p>
 
           <div className="flex flex-col md:flex-row items-center w-full">
@@ -74,7 +75,7 @@ const WonByBidLanding = () => {
               onClick={handleDownloadAppClick}
               className="px-8 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white rounded-xl text-lg font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
             >
-              Download App
+            <span className="flex items-center"> {/* Download WonByBid app */}Coming soon on <img src="https://img.icons8.com/?size=512&id=22988&format=png" alt="" className="w-6 h-6 ml-2" /> and  <img src="https://img.icons8.com/color/512/apple-app-store.png" alt="" className="w-6 h-6 ml-2" /></span>
             </button>
           </div>
         </div>

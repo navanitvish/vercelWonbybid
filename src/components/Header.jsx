@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import image1 from "../assets/lastlogo.jpg";
 import apkFile from "../assets/app-release.apk"; // Import the APK file
-
+import { GoPlay } from 'react-icons/go';
 const Header = () => {
   const handleDownloadAppClick = () => {
     // Create a temporary anchor element
@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <>
-      <header className=" shadow-md top-0 z-50">
+      <header className=" shadow-md top-0 z-50 overflow-x-hidden">
         <div className=" flex justify-between items-center p-2">
           {/* Logo on the left */}
           <Link to="/" className="flex items-center">
@@ -32,10 +32,10 @@ const Header = () => {
 
           {/* Download button on the right */}
           <button
-            onClick={handleDownloadAppClick}
-            className=" lg:block group flex  items-center justify-center lg:px-6 lg:py-3 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+            // onClick={handleDownloadAppClick}
+            className=" lg:block group flex  items-center justify-center lg:px-12 lg:py-3 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg text-base md:text-lg font-semibold transition-all duration-300 transform hover:scale-105"
           >
-            Download App
+            {/* Download App */} <span className="flex items-center"> Coming Soon <img src="https://img.icons8.com/?size=512&id=22988&format=png" alt="" className="w-6 h-6 ml-2" /> </span>
           </button>
         </div>
       </header>

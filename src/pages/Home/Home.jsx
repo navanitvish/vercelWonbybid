@@ -87,7 +87,8 @@ const Home = () => {
   }, [scrolled]);
 
   return (
-    <div className="relative">
+  <div className=" overflow-x-hidden">
+      <div className="relative ">
       <Carousel />
       <MissCallSection />
       <Toprated />
@@ -98,7 +99,7 @@ const Home = () => {
       {/* <TestimonialSlider /> */}
 
       {/* Download Button for Mobile View */}
-      <div className="lg:hidden  fixed top-7 right-4 overflow-visible">
+      <div className="lg:hidden  fixed top-7 right-4 ">
         {/* Animated border element */}
         <div className="animated-border hidden absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 rounded-full" />
 
@@ -116,13 +117,14 @@ const Home = () => {
       {/* Download Button for Desktop View */}
       <div className="lg:fixed bottom-0 right-0 p-4 bg-red-500 shadow-md rounded-t-xl hidden lg:block">
         <button
-          onClick={handleDownloadAppClick}
+          // onClick={handleDownloadAppClick}
           className="text-sm font-medium text-white"
         >
-          Download WonByBid app
+         <span className="flex items-center"> {/* Download WonByBid app */}Coming soon on <img src="https://img.icons8.com/?size=512&id=22988&format=png" alt="" className="w-6 h-6 ml-2" /> and <img src="https://img.icons8.com/color/512/apple-app-store.png" alt="" className="w-6 h-6 ml-2" /></span>
         </button>
       </div>
     </div>
+  </div>
   );
 };
 

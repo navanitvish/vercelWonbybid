@@ -73,9 +73,9 @@ const WonByBidLanding = () => {
           >
             <button
               onClick={handleDownloadAppClick}
-              className="px-8 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white rounded-xl text-lg font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
+              className="px-8 py-4 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 text-white rounded-xl  shadow-lg hover:scale-105 transition-transform duration-300"
             >
-            <span className="flex items-center"> {/* Download WonByBid app */}Coming soon on <img src="https://img.icons8.com/?size=512&id=22988&format=png" alt="" className="w-6 h-6 ml-2" /> and  <img src="https://img.icons8.com/color/512/apple-app-store.png" alt="" className="w-6 h-6 ml-2" /></span>
+            <span className="flex items-center text-sm lg:text-lg"> {/* Download WonByBid app */}Coming soon on <img src="https://img.icons8.com/?size=512&id=22988&format=png" alt="" className="w-6 h-6 ml-2" /> and  <img src="https://img.icons8.com/color/512/apple-app-store.png" alt="" className="w-6 h-6 ml-2" /></span>
             </button>
           </div>
         </div>
